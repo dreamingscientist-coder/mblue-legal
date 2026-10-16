@@ -13,3 +13,11 @@ a { color: #075fba; }
   a { color: #6ab0ff; }
   .muted { color: #aaa; }
 }
+.language { margin-bottom: 24px; }
+.language > span { display: block; font-size: .875rem; margin-bottom: 8px; }
+.language nav { display: inline-flex; gap: 4px; padding: 4px; margin: 0; border: 1px solid #888; border-radius: 12px; }
+.language a { padding: 8px 16px; border-radius: 8px; text-decoration: none; min-height: 44px; display: flex; align-items: center; }
+.language a[aria-current] { background: #075fba; color: #fff; font-weight: 600; }
+a:focus-visible { outline: 3px solid #ba7400; outline-offset: 3px; }
+p, li, a { overflow-wrap: anywhere; }
+@media (prefers-color-scheme: dark) { .language a[aria-current] { background: #6ab0ff; color: #111; } }
